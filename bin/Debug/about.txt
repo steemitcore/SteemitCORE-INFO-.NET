@@ -1,0 +1,89 @@
+SteemitCORE INFO v1.05
+----------------------------------
+
+SteemitCORE INFO v1.05 - first Windows 7,8,10 application developed on .NET technology 
+that allows you to check any Steemit account and get account informations for any 
+user on Steemit platform.
+
+If you need to check your balances, or your current upvote power, you just put your username 
+and press "get info".
+App will continue to check for new info every 5 minutes. 
+You can minimize app in system tray - then you will get infos like username, 
+STEEM and SBD total plus current upvote worth in small "cloud" popup. 
+So while you work on something else, you are always updated with fresh infos, 
+no need to go to any website.
+
+
+What's new in v1.05?
+-----------------------------------
+
+- getting data on ASYNC way - UI doesnt get blocked while waiting operation to complete
+- added progress bar / status to show progress / status data
+- added icon on "how to use app / help" button
+- various code / bug fixes
+
+
+SteemitCORE INFO v1.05 provides you:
+------------------------------------
+
+Account informations:
+
+- VESTS
+- Total STEEM
+- Total SBD
+- SP + delegation
+- Total SP
+- Account reputation
+- Number of posts created
+- Account age in days
+
+------------------------------------
+
+Voting power / bandwith informations:
+
+- Current upvote worth (in $)
+- Upvote worth at 100% power (in $)
+- Current voting power in colored bar
+- Current remaining account bandwith in colored bar
+- Wait time in order to reach 100% upvote power in seconds, 
+  minutes, hours and days
+
+Other options
+- run in background
+- create free STEEM account option
+- visit utopian.io and busy.org websites
+- about info (this document)
+
+-------------------------------------
+
+SteemitCORE INFO v1.05 is FREE, does not collect or 
+store any of your informations. Use this app as you wish. 
+
+-------------------------------------
+
+More cool features comming soon:
+
+- abbility to make create posts from desktop, upvote and follow on Steemit 
+  with Ditch .NET library integration ( current on testing )
+
+- app redesign using DotNetBar and Office style interface
+  ( in development phase )
+
+..and other cool features worth to see
+
+--------------------------------------
+
+If you like to get info about upcoming updates, 
+please leave comment and follow me at:
+
+https://www.steemit.com/@steemitcore
+
+--------------------------------------
+
+Thanks and enjoy using SteemitCORE INFO v1.05 !
+
+--------------------------------------
+
+
+
+

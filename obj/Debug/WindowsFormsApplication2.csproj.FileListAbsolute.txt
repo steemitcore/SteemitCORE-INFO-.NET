@@ -1,0 +1,24 @@
+c:\users\brl544\documents\visual studio 2012\Projects\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Form1.resources
+c:\users\brl544\documents\visual studio 2012\Projects\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
+c:\users\brl544\documents\visual studio 2012\Projects\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.csproj.GenerateResource.Cache
+c:\users\brl544\documents\visual studio 2012\Projects\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe.config
+c:\users\brl544\documents\visual studio 2012\Projects\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe
+c:\users\brl544\documents\visual studio 2012\Projects\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.pdb
+c:\users\brl544\documents\visual studio 2012\Projects\WindowsFormsApplication2\bin\Debug\HtmlAgilityPack.dll
+c:\users\brl544\documents\visual studio 2012\Projects\WindowsFormsApplication2\bin\Debug\HtmlAgilityPack.pdb
+c:\users\brl544\documents\visual studio 2012\Projects\WindowsFormsApplication2\bin\Debug\HtmlAgilityPack.xml
+c:\users\brl544\documents\visual studio 2012\Projects\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.exe
+c:\users\brl544\documents\visual studio 2012\Projects\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.pdb
+C:\Users\brl544\Documents\Visual Studio 2012\Projects\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.csprojResolveAssemblyReference.cache
+C:\Users\otkup\Desktop\Projekti\Test projekti\steemitcore\obj\Debug\WindowsFormsApplication2.csprojResolveAssemblyReference.cache
+C:\Users\otkup\Desktop\Projekti\Test projekti\steemitcore\obj\Debug\WindowsFormsApplication2.Form1.resources
+C:\Users\otkup\Desktop\Projekti\Test projekti\steemitcore\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
+C:\Users\otkup\Desktop\Projekti\Test projekti\steemitcore\obj\Debug\WindowsFormsApplication2.csproj.GenerateResource.Cache
+C:\Users\otkup\Desktop\Projekti\Test projekti\steemitcore\obj\Debug\WindowsFormsApplication2.csproj.CoreCompileInputs.cache
+C:\Users\otkup\Desktop\Projekti\Test projekti\steemitcore\obj\Debug\WindowsFormsApplication2.exe
+C:\Users\otkup\Desktop\Projekti\Test projekti\steemitcore\obj\Debug\WindowsFormsApplication2.pdb
+C:\Users\otkup\Desktop\Projekti\Test projekti\steemitcore\bin\Debug\WindowsFormsApplication2.exe.config
+C:\Users\otkup\Desktop\Projekti\Test projekti\steemitcore\bin\Debug\WindowsFormsApplication2.exe
+C:\Users\otkup\Desktop\Projekti\Test projekti\steemitcore\bin\Debug\WindowsFormsApplication2.pdb
+C:\Users\otkup\Desktop\Projekti\Test projekti\steemitcore\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\otkup\Desktop\Projekti\Test projekti\steemitcore\bin\Debug\HtmlAgilityPack.xml

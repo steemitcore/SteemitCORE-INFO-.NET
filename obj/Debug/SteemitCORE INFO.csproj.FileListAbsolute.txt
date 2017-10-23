@@ -1,0 +1,11 @@
+C:\Users\otkup\Desktop\Projekti\Test projekti\steemitcore\bin\Debug\WindowsFormsApplication2.exe.config
+C:\Users\otkup\Desktop\Projekti\Test projekti\steemitcore\bin\Debug\WindowsFormsApplication2.exe
+C:\Users\otkup\Desktop\Projekti\Test projekti\steemitcore\bin\Debug\WindowsFormsApplication2.pdb
+C:\Users\otkup\Desktop\Projekti\Test projekti\steemitcore\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\otkup\Desktop\Projekti\Test projekti\steemitcore\bin\Debug\HtmlAgilityPack.xml
+C:\Users\otkup\Desktop\Projekti\Test projekti\steemitcore\obj\Debug\WindowsFormsApplication2.SteemitCOREMainForm.resources
+C:\Users\otkup\Desktop\Projekti\Test projekti\steemitcore\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
+C:\Users\otkup\Desktop\Projekti\Test projekti\steemitcore\obj\Debug\SteemitCORE INFO.csproj.GenerateResource.Cache
+C:\Users\otkup\Desktop\Projekti\Test projekti\steemitcore\obj\Debug\SteemitCORE INFO.csproj.CoreCompileInputs.cache
+C:\Users\otkup\Desktop\Projekti\Test projekti\steemitcore\obj\Debug\WindowsFormsApplication2.exe
+C:\Users\otkup\Desktop\Projekti\Test projekti\steemitcore\obj\Debug\WindowsFormsApplication2.pdb
