@@ -48,10 +48,8 @@ namespace SteemitCOREINFO
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.btnAbout = new System.Windows.Forms.ToolStripButton();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.progressStatus = new System.Windows.Forms.ToolStripProgressBar();
@@ -88,10 +86,15 @@ namespace SteemitCOREINFO
             this.lblTotalSP = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.toolStrip2 = new System.Windows.Forms.ToolStrip();
+            this.lblSBDPendingInfo = new System.Windows.Forms.ToolStripLabel();
+            this.lblSBDPendingBalance = new System.Windows.Forms.ToolStripLabel();
+            this.lblStatusPending = new System.Windows.Forms.Label();
             this.toolStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.grpGeneral.SuspendLayout();
+            this.toolStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblVoting
@@ -167,10 +170,8 @@ namespace SteemitCOREINFO
             this.toolStripSeparator5,
             this.toolStripButton3,
             this.toolStripSeparator3,
-            this.toolStripButton4,
+            this.toolStripButton1,
             this.toolStripSeparator2,
-            this.toolStripButton5,
-            this.toolStripSeparator4,
             this.btnAbout});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
@@ -192,6 +193,7 @@ namespace SteemitCOREINFO
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(100, 25);
             this.txtUser.TextBoxTextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtUser.ToolTipText = "enter STEEM user you wish to check";
             // 
             // toolStripSeparator1
             // 
@@ -204,8 +206,8 @@ namespace SteemitCOREINFO
             this.btnCheck.Image = global::SteemitCOREINFO.Properties.Resources.face_icon_png_42781;
             this.btnCheck.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnCheck.Name = "btnCheck";
-            this.btnCheck.Size = new System.Drawing.Size(68, 22);
-            this.btnCheck.Text = "get info";
+            this.btnCheck.Size = new System.Drawing.Size(114, 22);
+            this.btnCheck.Text = "get account info";
             this.btnCheck.Click += new System.EventHandler(this.ToolStripButton1_Click);
             // 
             // toolStripSeparator5
@@ -219,8 +221,9 @@ namespace SteemitCOREINFO
             this.toolStripButton3.Image = global::SteemitCOREINFO.Properties.Resources.favicon;
             this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(152, 22);
-            this.toolStripButton3.Text = "get free STEEM account";
+            this.toolStripButton3.Size = new System.Drawing.Size(132, 22);
+            this.toolStripButton3.Text = "free STEEM account";
+            this.toolStripButton3.ToolTipText = "Get FREE STEEM account";
             this.toolStripButton3.Click += new System.EventHandler(this.ToolStripButton3_Click);
             // 
             // toolStripSeparator3
@@ -228,37 +231,22 @@ namespace SteemitCOREINFO
             this.toolStripSeparator3.Name = "toolStripSeparator3";
             this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
             // 
-            // toolStripButton4
+            // toolStripButton1
             // 
-            this.toolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripButton4.ForeColor = System.Drawing.Color.SteelBlue;
-            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton4.Name = "toolStripButton4";
-            this.toolStripButton4.Size = new System.Drawing.Size(65, 22);
-            this.toolStripButton4.Text = "utopian.io";
-            this.toolStripButton4.ToolTipText = "Visit utopian.io and support this Project";
-            this.toolStripButton4.Click += new System.EventHandler(this.ToolStripButton4_Click);
+            this.toolStripButton1.ForeColor = System.Drawing.Color.SteelBlue;
+            this.toolStripButton1.Image = global::SteemitCOREINFO.Properties.Resources.Custom_Icon_Design_Pretty_Office_8_Thumb_up;
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(131, 22);
+            this.toolStripButton1.Text = "STEEMP.NET poster";
+            this.toolStripButton1.ToolTipText = "Make posts on STEEM, follow STEEM users and more, directly from Windows desktop -" +
+    " GET STEEMP.NET - first STEEM blockchain poster for Windows";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click_1);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
-            // 
-            // toolStripButton5
-            // 
-            this.toolStripButton5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripButton5.ForeColor = System.Drawing.Color.SteelBlue;
-            this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton5.Name = "toolStripButton5";
-            this.toolStripButton5.Size = new System.Drawing.Size(57, 22);
-            this.toolStripButton5.Text = "busy.org";
-            this.toolStripButton5.ToolTipText = "Visit busy.org and support this Project";
-            this.toolStripButton5.Click += new System.EventHandler(this.toolStripButton5_Click);
-            // 
-            // toolStripSeparator4
-            // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 25);
             // 
             // btnAbout
             // 
@@ -277,7 +265,7 @@ namespace SteemitCOREINFO
             this.progressStatus,
             this.lblStatusBar,
             this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 302);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 340);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
             this.statusStrip1.Size = new System.Drawing.Size(615, 23);
@@ -307,6 +295,7 @@ namespace SteemitCOREINFO
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(98, 18);
             this.toolStripStatusLabel1.Text = "visit @steemitcore";
+            this.toolStripStatusLabel1.ToolTipText = "for regular updates visit my STEEM blog @steemitcore";
             this.toolStripStatusLabel1.Click += new System.EventHandler(this.ToolStripStatusLabel1_Click);
             // 
             // groupBox2
@@ -332,7 +321,7 @@ namespace SteemitCOREINFO
             this.groupBox2.Controls.Add(this.lblCurrentUpvote);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.groupBox2.ForeColor = System.Drawing.Color.SteelBlue;
-            this.groupBox2.Location = new System.Drawing.Point(260, 28);
+            this.groupBox2.Location = new System.Drawing.Point(263, 53);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(342, 263);
             this.groupBox2.TabIndex = 40;
@@ -487,7 +476,7 @@ namespace SteemitCOREINFO
             this.grpGeneral.Controls.Add(this.label4);
             this.grpGeneral.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.grpGeneral.ForeColor = System.Drawing.Color.SteelBlue;
-            this.grpGeneral.Location = new System.Drawing.Point(12, 28);
+            this.grpGeneral.Location = new System.Drawing.Point(12, 53);
             this.grpGeneral.Name = "grpGeneral";
             this.grpGeneral.Size = new System.Drawing.Size(245, 263);
             this.grpGeneral.TabIndex = 36;
@@ -654,12 +643,51 @@ namespace SteemitCOREINFO
             this.label4.TabIndex = 20;
             this.label4.Text = "SP total:";
             // 
+            // toolStrip2
+            // 
+            this.toolStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.lblSBDPendingInfo,
+            this.lblSBDPendingBalance});
+            this.toolStrip2.Location = new System.Drawing.Point(0, 25);
+            this.toolStrip2.Name = "toolStrip2";
+            this.toolStrip2.Size = new System.Drawing.Size(615, 25);
+            this.toolStrip2.TabIndex = 41;
+            this.toolStrip2.Text = "toolStrip2";
+            // 
+            // lblSBDPendingInfo
+            // 
+            this.lblSBDPendingInfo.ForeColor = System.Drawing.Color.SteelBlue;
+            this.lblSBDPendingInfo.Name = "lblSBDPendingInfo";
+            this.lblSBDPendingInfo.Size = new System.Drawing.Size(138, 22);
+            this.lblSBDPendingInfo.Text = "Pending payout balance:";
+            // 
+            // lblSBDPendingBalance
+            // 
+            this.lblSBDPendingBalance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblSBDPendingBalance.ForeColor = System.Drawing.Color.SteelBlue;
+            this.lblSBDPendingBalance.Name = "lblSBDPendingBalance";
+            this.lblSBDPendingBalance.Size = new System.Drawing.Size(58, 22);
+            this.lblSBDPendingBalance.Text = "0.00 SBD";
+            this.lblSBDPendingBalance.ToolTipText = "This shows pending payout balance, scanned up to 100 posts deep";
+            // 
+            // lblStatusPending
+            // 
+            this.lblStatusPending.AutoSize = true;
+            this.lblStatusPending.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblStatusPending.ForeColor = System.Drawing.Color.DimGray;
+            this.lblStatusPending.Location = new System.Drawing.Point(12, 319);
+            this.lblStatusPending.Name = "lblStatusPending";
+            this.lblStatusPending.Size = new System.Drawing.Size(0, 13);
+            this.lblStatusPending.TabIndex = 42;
+            // 
             // SteemitCOREMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(615, 325);
+            this.ClientSize = new System.Drawing.Size(615, 363);
+            this.Controls.Add(this.lblStatusPending);
+            this.Controls.Add(this.toolStrip2);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.toolStrip1);
@@ -670,7 +698,7 @@ namespace SteemitCOREINFO
             this.MaximizeBox = false;
             this.Name = "SteemitCOREMainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "SteemitCORE INFO v1.05 by @steemitcore";
+            this.Text = "SteemitCORE INFO v1.10 by @steemitcore";
             this.Resize += new System.EventHandler(this.SteemitCOREMainForm_Resize);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
@@ -680,6 +708,8 @@ namespace SteemitCOREINFO
             this.groupBox2.PerformLayout();
             this.grpGeneral.ResumeLayout(false);
             this.grpGeneral.PerformLayout();
+            this.toolStrip2.ResumeLayout(false);
+            this.toolStrip2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -731,17 +761,19 @@ namespace SteemitCOREINFO
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label lblCurrUpvote;
         private System.Windows.Forms.Label lblCurrentUpvote;
-        private System.Windows.Forms.ToolStripButton toolStripButton4;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.Label lblSPDeleg;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ToolStripButton toolStripButton5;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
         private System.Windows.Forms.ToolStripProgressBar progressStatus;
         private System.Windows.Forms.ToolStripStatusLabel lblStatusBar;
         private System.Windows.Forms.ToolStripButton btnAbout;
         private System.Windows.Forms.ToolStripButton btnCheck;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
+        private System.Windows.Forms.ToolStrip toolStrip2;
+        private System.Windows.Forms.ToolStripLabel lblSBDPendingInfo;
+        private System.Windows.Forms.ToolStripLabel lblSBDPendingBalance;
+        private System.Windows.Forms.Label lblStatusPending;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
     }
 }
 

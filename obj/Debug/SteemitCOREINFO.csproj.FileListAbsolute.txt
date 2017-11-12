@@ -8,3 +8,15 @@ C:\Users\otkup\Desktop\Projekti\Test projekti\steemitcore\obj\Debug\SteemitCOREI
 C:\Users\otkup\Desktop\Projekti\Test projekti\steemitcore\obj\Debug\SteemitCOREINFO.pdb
 C:\Users\otkup\Desktop\Projekti\Test projekti\steemitcore\obj\Debug\SteemitCOREINFO.SteemitCOREMainForm.resources
 C:\Users\otkup\Desktop\Projekti\Test projekti\steemitcore\obj\Debug\SteemitCOREINFO.csprojResolveAssemblyReference.cache
+C:\Users\otkup\source\repos\SteemitCORE-INFO-.NET\bin\Debug\SteemitCOREINFO.exe.config
+C:\Users\otkup\source\repos\SteemitCORE-INFO-.NET\bin\Debug\SteemitCOREINFO.exe
+C:\Users\otkup\source\repos\SteemitCORE-INFO-.NET\bin\Debug\SteemitCOREINFO.pdb
+C:\Users\otkup\source\repos\SteemitCORE-INFO-.NET\obj\Debug\SteemitCOREINFO.Properties.Resources.resources
+C:\Users\otkup\source\repos\SteemitCORE-INFO-.NET\obj\Debug\SteemitCOREINFO.SteemitCOREMainForm.resources
+C:\Users\otkup\source\repos\SteemitCORE-INFO-.NET\obj\Debug\SteemitCOREINFO.csproj.GenerateResource.Cache
+C:\Users\otkup\source\repos\SteemitCORE-INFO-.NET\obj\Debug\SteemitCOREINFO.exe
+C:\Users\otkup\source\repos\SteemitCORE-INFO-.NET\obj\Debug\SteemitCOREINFO.pdb
+C:\Users\otkup\source\repos\SteemitCORE-INFO-.NET\bin\Debug\Newtonsoft.Json.dll
+C:\Users\otkup\source\repos\SteemitCORE-INFO-.NET\bin\Debug\Newtonsoft.Json.xml
+C:\Users\otkup\source\repos\SteemitCORE-INFO-.NET\bin\Debug\Geckofx-Winforms.dll
+C:\Users\otkup\source\repos\SteemitCORE-INFO-.NET\bin\Debug\Geckofx-Core.dll

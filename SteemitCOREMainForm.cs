@@ -14,6 +14,8 @@ using System.Threading;
 using System.Diagnostics;
 using System.IO;
 using System.Runtime.InteropServices;
+using Newtonsoft.Json;
+using System.Globalization;
 
 namespace SteemitCOREINFO
 {
@@ -100,8 +102,10 @@ namespace SteemitCOREINFO
             public string Hours { get; set; }
             public string Days { get; set; }
             public string Status { get; set; }
+            public string PendingBalanceStatus { get; set; }
             public string Upvote { get; set; }
             public string CurrentUpvote { get; set; }
+            public string PendingBalance { get; set; }
         }
 
         private void ToolStripButton1_Click(object sender, EventArgs e)
@@ -175,6 +179,8 @@ namespace SteemitCOREINFO
                     progressStatus.Style = ProgressBarStyle.Blocks;
                     pbVoting.Value = (int)(Convert.ToDouble(taskAsync.Result.Voting) * 1.0f);
                     pbBandwith.Value = (int)(Convert.ToDouble(taskAsync.Result.Bandwith) * 1.0f);
+                    lblStatusPending.Text = taskAsync.Result.PendingBalanceStatus;
+                    lblSBDPendingBalance.Text = taskAsync.Result.PendingBalance;
                     SetProgressBars();
                     pbVoting.Refresh();
                     pbBandwith.Refresh();
@@ -419,6 +425,54 @@ namespace SteemitCOREINFO
                         }
                     }
 
+                    // API call for pending balance
+
+                     int postNumber = 100;
+                     int numberOfPosts = 0;
+
+                     htmlDoc = new HtmlAgilityPack.HtmlDocument
+                     {
+                         OptionFixNestedTags = true
+                     };
+
+                urlToLoad = "https://api.steemjs.com/get_discussions_by_blog?query=%7B%22tag%22%3A%22" + user + "%22%2C%20%22limit%22%3A%20%22" + postNumber + "%22%7D";
+                request = HttpWebRequest.Create(urlToLoad) as HttpWebRequest;
+                request.Method = "GET";
+
+                /* Sart browser signature */
+                request.UserAgent = "Mozilla/5.0 (Windows NT 6.3; WOW64; rv:31.0) Gecko/20100101 Firefox/31.0";
+                request.Accept = "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8";
+                request.Headers.Add(HttpRequestHeader.AcceptLanguage, "en-us,en;q=0.5");
+                /* Sart browser signature */
+
+                try
+                {
+                    Console.WriteLine(request.RequestUri.AbsoluteUri);
+                    WebResponse response = request.GetResponse();
+                    htmlDoc.Load(response.GetResponseStream(), true);
+                }
+
+                catch (Exception ex)
+                {
+                    returnValue.PendingBalanceStatus = "Error getting pending balance: " + ex.Message;
+                    return returnValue;
+                }
+
+                STEEMPostData[] result = JsonConvert.DeserializeObject<STEEMPostData[]>(htmlDoc.DocumentNode.InnerText);
+
+                decimal total = 0.0m;
+
+                var lst = result.AsEnumerable().ToList();
+                // var orderedLst = lst.OrderByDescending(t => t.pending_payout_value).ToList();
+                numberOfPosts = lst.Count();
+
+                //permLinkToTransfer = lst[numberOfPosts - 1].permlink.ToString();
+
+                //lst.ForEach(emp => txtResponse.Text = txtResponse.Text + "\r\n" + emp.pending_payout_value.Replace("SBD", ""));
+
+                lst.ForEach(emp => total = total + Convert.ToDecimal(emp.pending_payout_value.Replace("SBD", ""), CultureInfo.InvariantCulture));
+
+                returnValue.PendingBalance = "" + total + " SBD";
                     returnValue.Seconds = "" + totalSeconds;
                     returnValue.Minutes = "" + totalMinutes;
                     returnValue.Hours = "" + totalHours;
@@ -454,11 +508,6 @@ namespace SteemitCOREINFO
             Process.Start("https://steemit.com/pick_account");
         }
 
-        private void ToolStripButton4_Click(object sender, EventArgs e)
-        {
-            Process.Start("https://utopian.io");
-        }
-
         private void BtnAbout_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start(Directory.GetCurrentDirectory() + "\\about.txt");
@@ -481,9 +530,55 @@ namespace SteemitCOREINFO
             }
         }
 
-        private void toolStripButton5_Click(object sender, EventArgs e)
+        public class STEEMPostData
         {
-            Process.Start("https://busy.org");
+            public int id { get; set; }
+            public string author { get; set; }
+            public string permlink { get; set; }
+            public string category { get; set; }
+            public string parent_author { get; set; }
+            public string parent_permlink { get; set; }
+            public string title { get; set; }
+            public string body { get; set; }
+            public string json_metadata { get; set; }
+            public string created { get; set; }
+            public string active { get; set; }
+            public string last_payout { get; set; }
+            public string depth { get; set; }
+            public string children { get; set; }
+            public string net_rshares { get; set; }
+            public string abs_rshares { get; set; }
+            public string vote_rshares { get; set; }
+            public string children_abs_rshares { get; set; }
+            public string max_cashout_time { get; set; }
+            public string total_vote_weight { get; set; }
+            public string reward_weight { get; set; }
+            public string total_payout_value { get; set; }
+            public string curator_payout_value { get; set; }
+            public string author_rewards { get; set; }
+            public string net_votes { get; set; }
+            public string root_comment { get; set; }
+            public string max_accepted_payout { get; set; }
+            public string percent_steem_dollars { get; set; }
+            public string allow_replies { get; set; }
+            public string allow_votes { get; set; }
+            public string allow_curation_rewards { get; set; }
+            // public string beneficiaries { get; set; }
+            public string url { get; set; }
+            public string root_title { get; set; }
+            public string pending_payout_value { get; set; }
+            public string total_pending_payout_value { get; set; }
+            // public string active_votes { get; set; }
+            // public string replies { get; set; }
+            public string author_reputation { get; set; }
+            public string promoted { get; set; }
+            public string body_length { get; set; }
+            // public string reblogged_by { get; set; }
+        }
+
+        private void toolStripButton1_Click_1(object sender, EventArgs e)
+        {
+            Process.Start("http://www.steemit.com/@steemitcore");
         }
     }
 }

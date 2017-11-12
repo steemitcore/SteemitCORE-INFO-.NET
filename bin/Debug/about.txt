@@ -1,17 +1,26 @@
-SteemitCORE INFO v1.05
+SteemitCORE INFO v1.10
 ----------------------------------
 
-SteemitCORE INFO v1.05 - first Windows 7,8,10 application developed on .NET technology 
+SteemitCORE INFO v1.10 - first Windows 7,8,10 application developed on .NET technology 
 that allows you to check any Steemit account and get account informations for any 
 user on Steemit platform.
 
 If you need to check your balances, or your current upvote power, you just put your username 
-and press "get info".
+and press "get account info".
 App will continue to check for new info every 5 minutes. 
 You can minimize app in system tray - then you will get infos like username, 
 STEEM and SBD total plus current upvote worth in small "cloud" popup. 
 So while you work on something else, you are always updated with fresh infos, 
 no need to go to any website.
+
+
+What's new in v1.10?
+-----------------------------------
+
+- getting data on ASYNC way - now includes "Pending payout balance" information, 
+  up to 100 posts deep
+- added STEEMP.NET poster toolbar button 
+- various code / bug fixes
 
 
 What's new in v1.05?
@@ -23,7 +32,7 @@ What's new in v1.05?
 - various code / bug fixes
 
 
-SteemitCORE INFO v1.05 provides you:
+SteemitCORE INFO v1.10 provides you:
 ------------------------------------
 
 Account informations:
@@ -36,6 +45,7 @@ Account informations:
 - Account reputation
 - Number of posts created
 - Account age in days
+- Pending payout balance 
 
 ------------------------------------
 
@@ -56,15 +66,12 @@ Other options
 
 -------------------------------------
 
-SteemitCORE INFO v1.05 is FREE, does not collect or 
+SteemitCORE INFO v1.10 is FREE, does not collect or 
 store any of your informations. Use this app as you wish. 
 
 -------------------------------------
 
 More cool features comming soon:
-
-- abbility to make create posts from desktop, upvote and follow on Steemit 
-  with Ditch .NET library integration ( current on testing )
 
 - app redesign using DotNetBar and Office style interface
   ( in development phase )
@@ -80,7 +87,7 @@ https://www.steemit.com/@steemitcore
 
 --------------------------------------
 
-Thanks and enjoy using SteemitCORE INFO v1.05 !
+Thanks and enjoy using SteemitCORE INFO v1.10 !
 
 --------------------------------------
 
